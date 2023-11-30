@@ -7,7 +7,8 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <Button
         color="orange"
-        title='click me' 
+        title='click me'
+        onPress={() => alert('Button Tape')}
       />
     </SafeAreaView>
   );
