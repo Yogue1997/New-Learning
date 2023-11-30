@@ -18,7 +18,7 @@ export default function App() {
     }}>
       <View style={{
         backgroundColor: "dodgerblue",
-        width: 400,
+        width: 100,
         flexShrink: 1,//same as flex:-1. To help content to be in the middle instead of overflowing 
         height: 100
       }}/>
@@ -26,6 +26,10 @@ export default function App() {
         backgroundColor: "gold",
         width: 100,
         height: 100,
+        top: 20,
+        // bottom: 20,
+        left: 20,
+        position: "relative"
       }}/>
       <View style={{
         backgroundColor: "tomato",
