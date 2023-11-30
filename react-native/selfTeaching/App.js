@@ -18,10 +18,8 @@ export default function App() {
     }}>
       <View style={{
         backgroundColor: "dodgerblue",
-        flexBasis: 100,//width or height
-        flexGrow: 1,//same as flex property
-        
-        // width: 100,
+        width: 400,
+        flexShrink: 1,//same as flex:-1. To help content to be in the middle instead of overflowing 
         height: 100
       }}/>
       <View style={{
