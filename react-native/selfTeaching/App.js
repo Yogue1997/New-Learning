@@ -8,6 +8,7 @@ export default function App() {
       <Text numberOfLines={1} onPress={handlePress}>Hello Youssouf !</Text>
       <Image
       blurRadius={10}
+      fadeDuration={1000}//only for android
       source={{
         width: 200,
         height: 300,
