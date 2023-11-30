@@ -1,19 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image,TouchableWithoutFeedback, SafeAreaView} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TouchableWithoutFeedback, TouchableNativeFeedback, SafeAreaView} from 'react-native';
 
 export default function App() {
   const handlePress = () => console.log("Text cliked");
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello Youssouf !</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("Image tapped")}>
-      <Image
-      source={{
-        width: 200,
-        height: 300,
-        uri: "https://picsum.photos/200/300"
-      }}/>
-      </TouchableWithoutFeedback>
+      {/* only android */}
+      <TouchableNativeFeedback onPress={() => console.log("Image tapped")}> 
+        <View style={{ width:200, height:70, backgroundColor: "dodgerblue" }}></View>
+      </TouchableNativeFeedback>
     </SafeAreaView>
   );
 }
